@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+.modern-input {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.modern-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.modern-button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.modern-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
