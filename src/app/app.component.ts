@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common'; // Importa CommonModule
+import { CommonModule } from '@angular/common'; 
 import { WeatherService } from './service/weather.service';
 import { provideHttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule], // Agrega CommonModule aquí
+  imports: [RouterOutlet, CommonModule], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

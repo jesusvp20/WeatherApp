@@ -3,8 +3,6 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { importProvidersFrom } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
-// Modifica appConfig para incluir HttpClientModule
 const updatedAppConfig = {
   ...appConfig,
   providers: [

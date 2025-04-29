@@ -1,10 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-
 .modern-input {
   border-radius: 8px;
   border: 1px solid #ddd;
   padding: 10px 15px;
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -17,6 +18,9 @@
 .modern-button {
   border-radius: 8px;
   padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -28,8 +32,13 @@
 .card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+/* Animación */
 .card-body {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -42,5 +51,37 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive layout helpers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .modern-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modern-input,
+  .modern-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 5px;
+    padding: 10px;
   }
 }
